@@ -5,9 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '30 2 * * *' # 8am ist
-    - cron: '00 14 * * *' # 730 pm ist
-    - cron: '00 06 * * 1-5' # 1130 am ist every monday to friday
+    - cron: 30 2 * * * # 8am ist
+    - cron: 00 14 * * * # 730 pm ist
+    - cron: 00 06 * * 1-5 # 1130 am ist every monday to friday
 
 
 
@@ -31,10 +31,10 @@ jobs:
 
      - name: Run Collection
        run: |
-        newman run 'Inwarranty-flow Collection copy 2.postman_collection.json'\
-        -e  QA.postman_environment.json\
-        -r cli,htmlextra \
-        -d testdata.csv
+         newman run 'Inwarranty-flow Collection copy 2.postman_collection.json'\
+          -e  QA.postman_environment.json\
+          -r cli,htmlextra \
+          -d testdata.csv
 
 
 

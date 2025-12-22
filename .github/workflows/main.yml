@@ -33,7 +33,7 @@ jobs:
 
       - name : Run the postman Collection with newman
         run : |
-              newman run 'Inwarranty-flow Collection Copy-with external csv.postman_collection.json' \
+              newman run 'Inwarranty-flow Collection copy 2.postman_collection.json' \
               -e QA.postman_environment.json \
               -d testdata.csv \
               -r cli,htmlextra

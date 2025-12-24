@@ -32,7 +32,7 @@ you can run the project on your local system for that:
                newman run 'Inwarranty-flow Collection copy 2.postman_collection.json' \
               -e QA.postman_environment.json \
               -r cli,htmlextra \
-              --reporter-htmlextra-export ./newman/index.html
+             --reporter-htmlextra-export ./newman/index.html
 
    
    

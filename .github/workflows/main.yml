@@ -69,7 +69,8 @@ jobs:
           from: ${{ secrets.EMAIL_USERNAME }}
           body: |
                 Hi, 
-                Phoenix Inwarranty flow has been exceuted.The report has been published and the URL is:https://swatirshetty.github.io/Phoenix-Inwarranty-Flow/
+                Phoenix Inwarranty flow has been exceuted.The report has been published and the URL is:
+                https://swatirshetty.github.io/Phoenix-Inwarranty-Flow/
           
           
           

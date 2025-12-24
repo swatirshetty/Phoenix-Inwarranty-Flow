@@ -48,7 +48,7 @@ jobs:
           name : Newman Report
           path : newman/*.html
           
-      - name : Newman report
+      - name : Newman report in the gh-pages
         if : always() ## ensure that the archive section is going to be executed whether the previous step has pass or not
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:

@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "8e15dc9f-a432-4774-b578-a9bb5a52b762",
-		"name": "Inwarranty-flow Collection copy 2",
+		"_postman_id": "775d8d6d-a78d-4e8c-bc52-9708688619cf",
+		"name": "Inwarranty-flow Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "49867192",
-		"_collection_link": "https://swatijairam-shetty-1208813.postman.co/workspace/SDET-API~c562fc5a-fcf7-4e91-97c8-25b6e93ee385/collection/49867192-8e15dc9f-a432-4774-b578-a9bb5a52b762?action=share&source=collection_link&creator=49867192"
+		"_collection_link": "https://swatijairam-shetty-1208813.postman.co/workspace/c562fc5a-fcf7-4e91-97c8-25b6e93ee385/collection/49867192-775d8d6d-a78d-4e8c-bc52-9708688619cf?action=share&source=collection_link&creator=49867192"
 	},
 	"item": [
 		{
@@ -6525,14 +6525,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{BASE_URL}}/job/details/jobId",
+					"raw": "{{BASE_URL}}/job/details/{{jobNumber}}",
 					"host": [
 						"{{BASE_URL}}"
 					],
 					"path": [
 						"job",
 						"details",
-						"jobId"
+						"{{jobNumber}}"
 					]
 				},
 				"description": "Generated from cURL: curl 'http://64.227.160.186:9000/v1/job/details/JOB_30670' \\\r\n  -X 'POST' \\\r\n  -H 'Accept: application/json, text/plain, */*' \\\r\n  -H 'Accept-Language: en-US,en;q=0.9' \\\r\n  -H 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZmlyc3RfbmFtZSI6ImZkIiwibGFzdF9uYW1lIjoiZmQiLCJsb2dpbl9pZCI6ImlhbWZkIiwibW9iaWxlX251bWJlciI6Ijg4OTk3NzY2NTUiLCJlbWFpbF9pZCI6Im1hcmtAZ21haWwuY29tIiwicGFzc3dvcmQiOiI1ZjRkY2MzYjVhYTc2NWQ2MWQ4MzI3ZGViODgyY2Y5OSIsInJlc2V0X3Bhc3N3b3JkX2RhdGUiOm51bGwsImxvY2tfc3RhdHVzIjowLCJpc19hY3RpdmUiOjEsIm1zdF9yb2xlX2lkIjo1LCJtc3Rfc2VydmljZV9sb2NhdGlvbl9pZCI6MSwiY3JlYXRlZF9hdCI6IjIwMjEtMTEtMDNUMDg6MDY6MjMuMDAwWiIsIm1vZGlmaWVkX2F0IjoiMjAyMS0xMS0wM1QwODowNjoyMy4wMDBaIiwicm9sZV9uYW1lIjoiRnJvbnREZXNrIiwic2VydmljZV9sb2NhdGlvbiI6IlNlcnZpY2UgQ2VudGVyIEEiLCJpYXQiOjE3NDQ1MjY5ODV9.dAnEQ_OHa82aWGJwX4Mz3mO2FFjA_KFSL-wT0yJO7N8' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Length: 0' \\\r\n  -H 'Content-Type: text/plain' \\\r\n  -H 'Origin: http://phoenix.techwithjatin.com' \\\r\n  -H 'Referer: http://phoenix.techwithjatin.com/' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' \\\r\n  --insecure"

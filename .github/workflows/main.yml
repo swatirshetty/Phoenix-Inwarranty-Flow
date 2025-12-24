@@ -56,6 +56,30 @@ jobs:
           publish_dir: newman/
 
 
+      - name : Send Email Notification
+        if : always() ## ensure that the archive section is going to be executed whether the previous step has pass or not
+        uses: dawidd6/action-send-mail@v6
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username : ${{ secrets.EMAIL_USERNAME }}
+          password : ${{ secrets.EMAIL_PASSWORD }}
+          subject: Phoenix Inwarranty Flow Test Execution Notification
+          to: swati.shetty@hotmail.com
+          from: ${{ secrets.EMAIL_USERNAME }}
+          body: |
+                Hi, 
+                Phoenix Inwarranty flow has been exceuted.The report has been published and the URL is:https://swatirshetty.github.io/Phoenix-Inwarranty-Flow/
+          
+          
+          
+          
+          
+        
+
+          
+
+
 
 
       

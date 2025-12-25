@@ -6,6 +6,13 @@ Github actions will trigger the project execution on every push to the main bran
 The html reports are archived and kept in the arifact sections for the team to download it. Along with that they can view the report directly from the github page : https://swatirshetty.github.io/Phoenix-Inwarranty-Flow/.
 The latest report is emailed to the team members using GMAIL SMTP.
 
+## Testing Coverage ##
+1. Happy Flow Testing
+2. Negative Testing and Edge Case Testing
+3. Token Testing
+4. Data Driven Testing with CSV
+5. Schema Validation
+6. Secrets Management with Github Secrets
 
 ## Tech Stack ##
 1. Postman
@@ -22,6 +29,20 @@ The latest report is emailed to the team members using GMAIL SMTP.
 ## GitHub Pages ##
 You can directly view the latest test report of the Postman Test at the GitHub Page : https://swatirshetty.github.io/Phoenix-Inwarranty-Flow/
 
+## HTML Report ##
+The Report will be created in the newman folder
+  ![Postman Report](https://github.com/swatirshetty/Phoenix-Inwarranty-Flow/blob/Static-content/Newman-report.png)
+
+## Project Structure ##
+```
+Phoenix Inwarranty Flow
+├─ Inwarranty-flow Collection.postman_collection.json  #Collection file
+├─ QA.postman_environment.json  #Environment file
+├─ README.md   #Testdata file
+└─ testdata.csv
+
+```
+
 ## How to run the project ##
 you can run the project on your local system for that:
 1. Clone the Project on the Local system:  https://github.com/swatirshetty/Phoenix-Inwarranty-Flow.git
@@ -33,6 +54,9 @@ you can run the project on your local system for that:
               -e QA.postman_environment.json \
               -r cli,htmlextra \
              --reporter-htmlextra-export ./newman/index.html
+
+
+
 
    
    
